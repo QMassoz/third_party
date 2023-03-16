@@ -178,7 +178,7 @@ ExternalProject_Add(protobuf
 ExternalProject_Add(absl
   PREFIX absl
   SOURCE_DIR "${CMAKE_CURRENT_BINARY_DIR}/grpc-repo/src/grpc/third_party/abseil-cpp"
-  EXCLUDE_FROM_ALL ON
+  EXCLUDE_FROM_ALL OFF
   DOWNLOAD_COMMAND ""
   CMAKE_CACHE_ARGS
     -DCMAKE_POSITION_INDEPENDENT_CODE:BOOL=TRUE
