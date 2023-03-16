@@ -26,6 +26,7 @@
 
 cmake_minimum_required(VERSION 3.17)
 project(tritonthirdparty LANGUAGES C CXX)
+set(ABSL_PROPAGATE_CXX_STD ON)
 
 #
 # ExternalProject Dependencies
