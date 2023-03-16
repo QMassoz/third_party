@@ -26,7 +26,6 @@
 
 cmake_minimum_required(VERSION 3.17)
 project(tritonthirdparty LANGUAGES C CXX)
-set(ABSL_PROPAGATE_CXX_STD ON)
 
 #
 # ExternalProject Dependencies
@@ -265,7 +264,6 @@ ExternalProject_Add(grpc
     ${_CMAKE_ARGS_VCPKG_TARGET_TRIPLET}
     -DCMAKE_BUILD_TYPE:STRING=${CMAKE_BUILD_TYPE}
     -DCMAKE_INSTALL_PREFIX:PATH=${TRITON_THIRD_PARTY_INSTALL_PREFIX}/grpc
-    -DABSL_PROPAGATE_CXX_STD:BOOL=ON
     -DCMAKE_CXX_STANDARD:STRING=17
 
   DEPENDS grpc-repo c-ares protobuf absl
